@@ -1,0 +1,1 @@
+笔记markdown存储在redme文件夹的redmi.md中
