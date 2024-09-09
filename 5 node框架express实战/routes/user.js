@@ -1,14 +1,12 @@
 var express = require('express');
+const controller = require("./../controller/user")
+
 var router = express.Router();
 
 /* GET users listing. */
 // 登录
-router.get('/logIn', function (req, res, next) {
-  res.send('登录');
-});
+router.post('/logIn', controller.logIn);
 // 注册
-router.get('/registr', function (req, res, next) {
-  res.send('注册');
-});
+router.post('/registr', controller.registr);
 
 module.exports = router;
