@@ -1,5 +1,7 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+
+const { jwtVerify } = require("./../utils/jwt")
 
 /* GET home page. */
 // router.get('/', function(req, res, next) {
@@ -7,6 +9,6 @@ var router = express.Router();
 // });
 
 router.use("/user", require("./user"))
-router.use("/video", require("./video"))
+router.use("/video", jwtVerify, require("./video"))
 
 module.exports = router;

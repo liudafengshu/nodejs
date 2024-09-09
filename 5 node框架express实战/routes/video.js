@@ -1,5 +1,5 @@
 var express = require('express');
-const controller = require("./../controller/video")
+const controller = require("../controller/video")
 
 var router = express.Router();
 

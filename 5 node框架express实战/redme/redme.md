@@ -180,6 +180,9 @@ qpp.listen(3000,()=>{
 ```shell
 npm i mongoose
 ```
+![alt text](image-41.png)
+![alt text](image-42.png)
+![alt text](image-43.png)
 
 ## 6 客户端提交数据校验
 通过第三方中间键 express-validator
@@ -223,23 +226,18 @@ $ npm install jsonwebtoken
 ![alt text](image-29.png)
 
 ## 10 用户登录认证与接口鉴权
-创建token
-![alt text](image-30.png)
-登录接口返回token
-![alt text](image-32.png)
+创建和验证jwt
+![alt text](image-44.png)
 
 我们用这种方式携带token，放在请求头的Authorization中
 注意前面要加Bearer,Bearer和token之间要有空格
 Authorization:Bearer token内容
 ![alt text](image-35.png)
 
-验证token  /util/jwt.js
-![alt text](image-33.png)
-![alt text](image-38.png)
-![alt text](image-40.png)
-以中间键的方式使用
-![alt text](image-36.png)
-![alt text](image-37.png)
+创建token应该登录接口中返回给客户端
+![alt text](image-45.png)
+验证token以中间键的方式使用
+![alt text](image-46.png)
 
 
 
